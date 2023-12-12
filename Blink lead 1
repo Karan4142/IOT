@@ -1,0 +1,13 @@
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(15,GPIO.out)
+for i in range(5):
+  GPIO.output(15,true)
+  print("ON")
+  time.sleep(1)
+  GPIO.output(15,False)
+  print("Off")
+  time.sleep(1)
+print("Done")
+GPIO.cleanup()
