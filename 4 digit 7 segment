@@ -19,3 +19,24 @@ currenttime = [ int(hour / 10), hour % 10, int(minute / 10), minute % 10 ]
 Display.Show(currenttime)
 Display.ShowDoublepoint(second % 2)
 time.sleep(1)
+
+
+Create a folder 4digitTime under /home/pi.
+mkdir 4igit
+cd 4digit/
+pwd
+ls
+clear
+
+Download the script using wget command.
+wget https://raspberrytips.nl/files/tm1637.py
+ls
+clear
+
+
+then write the above code
+and save it in same foldr as tm1637.py
+
+then go cmd 
+ls
+python clock.py     <-- this is just a name of ur program
